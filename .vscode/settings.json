@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.exe": "ignore",
+        "iostream": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "vector": "cpp"
+    }
+}
