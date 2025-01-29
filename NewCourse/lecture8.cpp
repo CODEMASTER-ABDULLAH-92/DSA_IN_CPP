@@ -74,3 +74,217 @@
 
 
 // ============== Code is Pending for this Pattren 
+
+
+
+
+
+
+
+
+
+
+
+// Take Notice from lecture 
+
+
+//           1 
+//         1 2 1 
+//       1 2 3 2 1 
+//     1 2 3 4 3 2 1 
+//   1 2 3 4 5 4 3 2 1 
+// 1 2 3 4 5 6 5 4 3 2 1 
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n = 6;
+//  for(int row = 1; row<= n; row++){
+//     for(int col = 1; col<= n - row; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = 1; col <= row; col++){
+//         cout<<col<<" ";
+//     }
+//     for(int col = row ; col  > 1; col--){
+//         cout<<col - 1<<" ";
+//     }
+//     cout<<endl;
+//  }   
+// return 0;
+// }
+
+
+
+
+
+
+//Checks with ChatGpt is this code correct
+
+// * * * * * * * * * * * * * * * * * * * * 
+// * * * * * * * * *     * * * * * * * * * 
+// * * * * * * * *         * * * * * * * * 
+// * * * * * * *             * * * * * * * 
+// * * * * * *                 * * * * * * 
+// * * * * *                     * * * * * 
+// * * * *                         * * * * 
+// * * *                             * * * 
+// * *                                 * * 
+// *                                     * 
+
+
+
+
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//      int n;
+//     cout<<"Enter the Number: ";
+//     cin>>n; //For N 10;
+
+//  for(int row = 1; row<=n; row++){
+//     for(int col = n; col >= row; col--){
+//         cout<<"* ";
+//     }
+//     for(int col = 1; col<=row - 1; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = 1; col<=row - 1; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = n; col>=row; col--){
+//         cout<<"* ";
+//     }
+//     cout<<endl;
+//  } 
+// return 0;
+// }
+
+
+
+// * * * * * * * * * * * * * * * * * * * * 
+// * * * * * * * * *     * * * * * * * * * 
+// * * * * * * * *         * * * * * * * * 
+// * * * * * * *             * * * * * * * 
+// * * * * * *                 * * * * * * 
+// * * * * *                     * * * * * 
+// * * * *                         * * * * 
+// * * *                             * * * 
+// * *                                 * * 
+// *                                     * 
+// *                                     * 
+// * *                                 * * 
+// * * *                             * * * 
+// * * * *                         * * * * 
+// * * * * *                     * * * * * 
+// * * * * * *                 * * * * * * 
+// * * * * * * *             * * * * * * * 
+// * * * * * * * *         * * * * * * * * 
+// * * * * * * * * *     * * * * * * * * * 
+// * * * * * * * * * * * * * * * * * * * * 
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+// int n;
+//     cout<<"Enter the Number: ";
+//     cin>>n; //For N 10;
+
+//  for(int row = 1; row<=n; row++){
+//     for(int col = n; col >= row; col--){
+//         cout<<"* ";
+//     }
+//     for(int col = 1; col<=row - 1; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = 1; col<=row - 1; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = n; col>=row; col--){
+//         cout<<"* ";
+//     }
+//     cout<<endl;
+//  }  
+//  for(int row = 1; row<= n; row++){
+//     for(int col = 1; col<= row; col++){
+//         cout<<"* ";
+//     }
+//     for(int col = n; col> row; col--){
+//         cout<<"  ";
+//     }
+//     for(int col = n; col> row; col--){
+//         cout<<"  ";
+//     }
+//     for(int col = 1; col<= row; col++){
+//         cout<<"* ";
+//     }
+//     cout<<endl;
+//  } 
+// return 0;
+// }
+
+
+
+// *                                     * 
+// * *                                 * * 
+// * * *                             * * * 
+// * * * *                         * * * * 
+// * * * * *                     * * * * * 
+// * * * * * *                 * * * * * * 
+// * * * * * * *             * * * * * * * 
+// * * * * * * * *         * * * * * * * * 
+// * * * * * * * * *     * * * * * * * * * 
+// * * * * * * * * * * * * * * * * * * * * 
+// * * * * * * * * * * * * * * * * * * * * 
+// * * * * * * * * *     * * * * * * * * * 
+// * * * * * * * *         * * * * * * * * 
+// * * * * * * *             * * * * * * * 
+// * * * * * *                 * * * * * * 
+// * * * * *                     * * * * * 
+// * * * *                         * * * * 
+// * * *                             * * * 
+// * *                                 * * 
+// *                                     * 
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  int n = 10;
+//  for(int row = 1; row <= n; row++){
+//     for(int col = 1; col<= row; col++){
+//         cout<<"* ";
+//     }
+//     for(int col = n; col > row; col--){
+//         cout<<"  ";
+//     }
+//     for(int col = n; col> row; col--){
+//         cout<<"  ";
+//     }
+//     for(int col = 1; col<=row; col++){
+//         cout<<"* ";
+//     }
+//     cout<<endl;
+//  }
+//  for(int row = 1; row<= n; row++){
+//     for(int col = n; col>= row; col--){
+//         cout<<"* ";
+//     }
+//     for(int col = 1; col < row; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = 1; col< row; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = n; col>=row; col--){
+//         cout<<"* ";
+//     }
+//     cout<<endl;
+//  }   
+// return 0;
+// }
