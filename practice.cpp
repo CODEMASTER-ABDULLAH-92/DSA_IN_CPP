@@ -420,3 +420,40 @@
 
 
 
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int arr[5] = {10, 20, 30, 40, 50};
+
+//     // Updating the 3rd element (index 2)
+//     arr[4] = 100;
+
+//     // Printing the updated array
+//     for (int i = 0; i < 5; i++) {
+//         cout << arr[i] << " ";
+//     }
+
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// class Node{
+//     public:
+//     int data;
+//     Node *next;
+//     Node(int value){
+//         data = value;
+//         next = NULL;
+//     }
+// };
+// int main(){
+
+// Node *Head = new Node(4);
+// cout<<Head -> data<<endl;
+// cout<<Head -> next<<endl;
+// return 0;
+// }
+

@@ -10,7 +10,7 @@
 //     int n =5;
 //     for(int row = 1; row<=5; row++){
 //         for(int col = 1; col<= n - row; col++){
-//             cout<<"  ";
+//             cout<<"- ";
 //         }
 //         for(int col = 1; col<=row; col++){
 //             cout<<"* ";
@@ -19,6 +19,42 @@
 //     }   
 // return 0;
 // }
+
+
+// *****
+//  ****
+//   ***
+//    **
+//     * 
+
+
+
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5; // Number of rows
+
+//     for (int row = 1; row <= n; row++) {
+//         // Print leading spaces
+//         for (int col = 1; col < row; col++) {
+//             cout << "- "; // Two spaces for alignment
+//         }
+//         // Print stars
+//         for (int col = 1; col <= n - row + 1; col++) {
+//             cout << "* ";
+//         }
+//         cout << endl; // Move to the next line
+//     }
+
+//     return 0;
+// }
+
+
+
 
 
 //       1 
@@ -252,39 +288,39 @@
 // *                                     * 
 
 
-// #include<iostream>
-// using namespace std;
-// int main(){
-//  int n = 10;
-//  for(int row = 1; row <= n; row++){
-//     for(int col = 1; col<= row; col++){
-//         cout<<"* ";
-//     }
-//     for(int col = n; col > row; col--){
-//         cout<<"  ";
-//     }
-//     for(int col = n; col> row; col--){
-//         cout<<"  ";
-//     }
-//     for(int col = 1; col<=row; col++){
-//         cout<<"* ";
-//     }
-//     cout<<endl;
-//  }
-//  for(int row = 1; row<= n; row++){
-//     for(int col = n; col>= row; col--){
-//         cout<<"* ";
-//     }
-//     for(int col = 1; col < row; col++){
-//         cout<<"  ";
-//     }
-//     for(int col = 1; col< row; col++){
-//         cout<<"  ";
-//     }
-//     for(int col = n; col>=row; col--){
-//         cout<<"* ";
-//     }
-//     cout<<endl;
-//  }   
-// return 0;
-// }
+#include<iostream>
+using namespace std;
+int main(){
+ int n = 10;
+ for(int row = 1; row <= n; row++){
+    for(int col = 1; col<= row; col++){
+        cout<<"* ";
+    }
+    for(int col = n; col > row; col--){
+        cout<<"  ";
+    }
+    for(int col = n; col> row; col--){
+        cout<<"  ";
+    }
+    for(int col = 1; col<=row; col++){
+        cout<<"* ";
+    }
+    cout<<endl;
+ }
+ for(int row = 1; row <= n; row++){
+    for(int col = n; col>= row; col--){
+        cout<<"* ";
+    }
+    for(int col = 1; col < row; col++){
+        cout<<"  ";
+    }
+    for(int col = 1; col< row; col++){
+        cout<<"  ";
+    }
+    for(int col = n; col>=row; col--){
+        cout<<"* ";
+    }
+    cout<<endl;
+ }   
+return 0;
+}
