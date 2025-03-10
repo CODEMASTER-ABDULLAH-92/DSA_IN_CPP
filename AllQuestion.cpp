@@ -77,45 +77,45 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-void printArr(int arr[], int length){
-    for(int i =0; i<length; i++){
-        cout<<arr[i]<<" ";
-    }
-}
-void evenOdd(int arr[], int length){
-    int evenArr[length];
-    int oddArr[length];
+// #include<iostream>
+// using namespace std;
+// void printArr(int arr[], int length){
+//     for(int i =0; i<length; i++){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+// void evenOdd(int arr[], int length){
+//     int evenArr[length];
+//     int oddArr[length];
 
-    int evenIndex =0;
-    int oddIndex = 0;
+//     int evenIndex =0;
+//     int oddIndex = 0;
 
 
-    for(int i =0; i<length;i++){
-        if (arr[i] % 2 == 0)
-        {
-            evenArr[evenIndex] = arr[i];
-            evenIndex++;
-        }
-        else
-        {
-            oddArr[oddIndex] = arr[i];
-            oddIndex++;
-        }
-    }
-    cout<<"Even Array: ";
-printArr(evenArr,evenIndex);
-    cout<<"Odd Array: ";
-printArr(oddArr,oddIndex);
+//     for(int i =0; i<length;i++){
+//         if (arr[i] % 2 == 0)
+//         {
+//             evenArr[evenIndex] = arr[i];
+//             evenIndex++;
+//         }
+//         else
+//         {
+//             oddArr[oddIndex] = arr[i];
+//             oddIndex++;
+//         }
+//     }
+//     cout<<"Even Array: ";
+// printArr(evenArr,evenIndex);
+//     cout<<"Odd Array: ";
+// printArr(oddArr,oddIndex);
 
-}
-int main(){
-    int arr[] = {1,2,3,4,5,6};
-    printArr(arr,6);
-    evenOdd(arr,6);
-return 0;
-}
+// }
+// int main(){
+//     int arr[] = {1,2,3,4,5,6};
+//     printArr(arr,6);
+//     evenOdd(arr,6);
+// return 0;
+// }
 
 
 //Prime Number
@@ -147,3 +147,34 @@ return 0;
 //     }
 //     return 0;
 // }
+
+
+
+
+//                      Rotate an Array by 1
+
+
+#include<iostream>
+using namespace std;
+void printArr(int arr[], int length){
+    for(int i =0; i<length; i++){
+        cout<<arr[i]<<" ";
+    }
+}
+void rotateByOne(int arr[], int length){
+    int temp = arr[length - 1];
+    for(int i = length - 1; i>0; i--){
+        arr[i] = arr[ i -1];
+    }
+    arr[0] = temp;
+}
+int main(){
+    int arr[] = {2,5,8,9,11};
+    cout<<"Before: ";
+    printArr(arr,5);
+    cout<<endl;
+    cout<<"After: ";
+    rotateByOne(arr,5);
+    printArr(arr,5);
+return 0;
+}
