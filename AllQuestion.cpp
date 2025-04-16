@@ -53,29 +53,6 @@
 
 //Fibonacci Series
 
-// #include<iostream>
-// using namespace std;
-// void printArr(int arr[], int length){
-//     for(int i =0; i<length; i++){
-//         cout<<arr[i]<<" ";
-//     }
-// }
-// void Even(int arr[], int length){
-//             int evenArr[length]; 
-//     for(int i =0; i<length; i++){
-//         if (arr[i] % 2 == 0)
-//         {
-//             evenArr[] = arr[i];
-//         }
-//     }
-// }
-// int main(){
-//     int arr[] = {1,2,3,4,5};
-//     Even(arr,5);
-//     printArr(arr,5);
-// return 0;
-// }
-
 
 // #include<iostream>
 // using namespace std;
@@ -148,6 +125,28 @@
 //     return 0;
 // }
 
+
+
+#include<iostream>
+using namespace std;
+int isPrime(int n){
+    if(n < 2) return false;
+    for(int i =2; i<n; i++){
+        if (n % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+int main(){
+    int n;
+    cout<<"Enter the Number: ";
+    cin>>n;
+    int result = isPrime(n);
+    cout<<result<<" ";
+return 0;
+}
 
 
 
@@ -321,6 +320,3 @@
 //     print(arr, 5);
 //     return 0;
 // }
-
-
-
