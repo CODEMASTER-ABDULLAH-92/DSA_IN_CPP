@@ -12,10 +12,11 @@ int main(){
     for(auto it:v)
     cout<<it<<" ";
 
-
 // Another Way to decalare and intialize an vector
 
-// vector<int> v1 = {1,2,3,4,5};
-
+vector<int> v1 = {1,2,3,4,5};
+for(int i =0; i< v1.size(); i++){
+    cout<<v1[i]<<" ";
+}
 return 0;
 }
